@@ -72,14 +72,3 @@ Invoke-RestMethod -Uri http://localhost:8080/todos/1 -Method Put -Body $body -Co
 # Delete a todo
 Invoke-RestMethod -Uri http://localhost:8080/todos/1 -Method Delete
 ```
-
-## Docker
-
-### Build and Run
-
-```bash
-# Build the image
-docker build -t todo-api .
-
-# Run the container
-docker run -p 8080:8080 todo-api
